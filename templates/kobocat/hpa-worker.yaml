@@ -1,5 +1,5 @@
 {{- if .Values.kobocat.worker.autoscaling.enabled }}
-apiVersion: autoscaling/v2
+apiVersion: autoscaling/v2beta2
 kind: HorizontalPodAutoscaler
 metadata:
   name: {{ include "kobo.fullname" . }}-kobocat-worker
